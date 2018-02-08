@@ -1,5 +1,7 @@
 package com.BaS.Model;
 
+import java.text.DecimalFormat;
+
 public class Circle {
     public double getDiameter() {
         return diameter;
@@ -38,11 +40,13 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "diameter: " + diameter +
+        DecimalFormat decimalFormat = new DecimalFormat("#.####");
+        return "diameter: " +
+                decimalFormat.format(diameter) +
                 "; square: " +
-                square +
+                decimalFormat.format(square)+
                 "; perimeter: " +
-                perimeter +
+                decimalFormat.format(perimeter) +
                 ';';
     }
 }
