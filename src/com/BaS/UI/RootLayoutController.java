@@ -15,6 +15,10 @@ public class RootLayoutController {
     @FXML
     TextField InfoTextLine;
 
+    /**
+     * handles CreateNewRoundButton click event
+     * generates alert in exception case
+     */
     @FXML
     public void HandleClick() {
         try {
@@ -28,10 +32,19 @@ public class RootLayoutController {
 
     }
 
+    /**
+     *
+     * @param radius - radius of new circle
+     * @return new circle
+     */
     public Circle createCircle(double radius) {
         return new Circle(radius);
     }
 
+    /**
+     *
+     * @return string contains of formatted values of current circle fields
+     */
     public String GetInfoAboutCurrentCircle()
     {
       return currentCircle.toString();

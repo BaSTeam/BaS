@@ -31,6 +31,10 @@ public class Circle {
     private double square;
     private double perimeter;
 
+    /**
+     * constructs new circle object and counts all fields
+     * @param radius - radius to count values of fields
+     */
     public Circle(double radius) {
 
         setDiameter(radius * 2);
@@ -38,6 +42,9 @@ public class Circle {
         setSquare(Math.PI * Math.PI * radius);
     }
 
+    /**
+     * @return string of formatted values of fields
+     */
     @Override
     public String toString() {
         DecimalFormat decimalFormat = new DecimalFormat("#.####");

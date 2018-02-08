@@ -14,6 +14,11 @@ public class Engine  extends Application{
     private static Engine app;
     private Stage primaryStage;
     private Pane rootLayout;
+
+    /**
+     * entry point of form application
+     * @param primaryStage stage of application on start
+     */
     @Override
     public void start(Stage primaryStage)
     {
@@ -23,6 +28,9 @@ public class Engine  extends Application{
         this.initRootLayout();
     }
 
+    /**
+     * loads and starts form classes
+     */
     private void initRootLayout() {
         try {
             FXMLLoader loader = new FXMLLoader();
