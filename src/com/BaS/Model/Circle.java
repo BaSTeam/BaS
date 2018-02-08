@@ -1,4 +1,4 @@
-package com.zaika.Model;
+package com.BaS.Model;
 
 public class Circle {
     public double getDiameter() {
