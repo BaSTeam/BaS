@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="137.0"
+      prefWidth="430.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.zaika.UI.MainFormController">
+   <Button fx:id="CreateNewRoundButton" layoutX="30.0" layoutY="40.0" mnemonicParsing="false"
+           onMouseClicked="#HandleClick" text="Create new Circle"/>
+   <TextField fx:id="radiusTextLine" layoutX="260.0" layoutY="40.0"/>
+   <Label layoutX="195.0" layoutY="45.0" text="Radius"/>
+   <Label layoutX="30.0" layoutY="100.0" text="Circle Info"/>
+   <TextField fx:id="InfoTextLine" disable="true" layoutX="97.0" layoutY="96.0" prefHeight="25.0" prefWidth="312.0"/>
+</Pane>
