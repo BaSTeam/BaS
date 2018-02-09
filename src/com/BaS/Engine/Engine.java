@@ -11,7 +11,6 @@ import java.io.IOException;
 import java.net.URL;
 
 public class Engine  extends Application{
-    private static Engine app;
     private Stage primaryStage;
     private Pane rootLayout;
 
@@ -22,7 +21,6 @@ public class Engine  extends Application{
     @Override
     public void start(Stage primaryStage)
     {
-        app = this;
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Circle CR");
         this.initRootLayout();

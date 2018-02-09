@@ -8,23 +8,23 @@ import javafx.scene.control.TextField;
 
 
 public class RootLayoutController {
-    public Button CreateNewRoundButton;
+    public Button createNewRoundButton;
     private Circle currentCircle;
     @FXML
     TextField radiusTextLine;
     @FXML
-    TextField InfoTextLine;
+    TextField infoTextLine;
 
     /**
-     * handles CreateNewRoundButton click event
+     * handles createNewRoundButton click event
      * generates alert in exception case
      */
     @FXML
-    public void HandleClick() {
+    public void handleClick() {
         try {
-            double ValueOfRadius = Double.parseDouble(this.radiusTextLine.getText());
-            currentCircle = createCircle(ValueOfRadius);
-            GetInfoAboutCurrentCircle();
+            double valueOfRadius = Double.parseDouble(this.radiusTextLine.getText());
+            createCircle(valueOfRadius);
+            getInfoAboutCurrentCircle();
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage());
             alert.show();
@@ -35,17 +35,16 @@ public class RootLayoutController {
     /**
      *
      * @param radius - radius of new circle
-     * @return new circle
      */
-    public Circle createCircle(double radius) {
-        return new Circle(radius);
+    public void createCircle(double radius) {
+        currentCircle = new Circle(radius);
     }
 
     /**
      *
      * @return string contains of formatted values of current circle fields
      */
-    public String GetInfoAboutCurrentCircle()
+    public String getInfoAboutCurrentCircle()
     {
       return currentCircle.toString();
     }
