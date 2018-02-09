@@ -24,7 +24,7 @@ public class RootLayoutController {
         try {
             double valueOfRadius = Double.parseDouble(this.radiusTextLine.getText());
             createCircle(valueOfRadius);
-            getInfoAboutCurrentCircle();
+           infoTextLine.setText( getInfoAboutCurrentCircle());
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage());
             alert.show();
