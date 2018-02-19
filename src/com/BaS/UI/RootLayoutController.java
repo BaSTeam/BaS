@@ -36,7 +36,7 @@ public class RootLayoutController {
      *
      * @param radius - radius of new circle
      */
-    public void createCircle(double radius) {
+    private void createCircle(double radius) {
         currentCircle = new Circle(radius);
     }
 
@@ -44,7 +44,7 @@ public class RootLayoutController {
      *
      * @return string contains of formatted values of current circle fields
      */
-    public String getInfoAboutCurrentCircle()
+    private String getInfoAboutCurrentCircle()
     {
       return currentCircle.toString();
     }
